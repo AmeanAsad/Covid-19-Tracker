@@ -1,0 +1,214 @@
+#graticule {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: .5;
+    stroke-width: .5px;
+}
+
+.message{
+    padding: 3% !important;
+    text-align: left;
+
+}
+
+
+#map-container {
+    margin: 0 auto;
+    clear: both;
+    /* background-color: #fdfffc; */
+    height: 90vh;
+    width: 95%;
+    border-radius: 5px;
+    border: 2px solid #0E6EB8;
+}
+
+#svg{
+    /* background-color: #3993ed; */
+    width: 2%;
+    float: left;
+    overflow: visible;
+}
+
+#country-details {
+  width: 100%;
+  z-index: -20;
+}
+
+#country-name {
+  font-size: 5em;
+  text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.table-row{
+    text-align: center;
+    /* padding: 5%; */
+}
+div.tooltip {
+    color: #222;
+    background: #fff;
+    padding: .5em;
+    text-shadow: #f5f5f5 0 1px 0;
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px 0px #a6a6a6;
+    opacity: 0.9;
+    position: absolute;
+}
+
+#tool{
+    /* width: 200px;
+    height: 50px; */
+    text-align: center;
+    /* margin: 0 auto; */
+    
+
+    /* background-color: yellow; */
+}
+
+.worldmap {
+    fill: none;
+}
+.continent {
+    -webkit-transition: opacity ease 0.2s;
+    -moz-transition: opacity ease 0.2s;
+    -ms-transition: opacity ease 0.2s;
+    -o-transition: opacity ease 0.2s;
+    transition: opacity ease 0.2s;
+    opacity: 1;
+    stroke: white;
+    stroke-width: 0px;
+}
+.continent .continent-name {
+    -webkit-transition: opacity ease 0.4s;
+    -moz-transition: opacity ease 0.4s;
+    -ms-transition: opacity ease 0.4s;
+    -o-transition: opacity ease 0.4s;
+    transition: opacity ease 0.4s;
+    fill: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+    font-size: 2em;
+    font-weight: bold;
+    opacity: 1;
+    pointer-events: none;
+    text-anchor: middle;
+}
+
+.continent.focused {
+    stroke-width: 0.5px;
+}
+.continent.unfocused,
+.continent.focused .continent-name,
+.continent.unfocused .continent-name {
+    opacity: 0;
+    pointer-events: none;
+}
+.continent.focused .country {
+    -webkit-transition: stroke-width ease 1s;
+    -moz-transition: stroke-width ease 1s;
+    -ms-transition: stroke-width ease 1s;
+    -o-transition: stroke-width ease 1s;
+    transition: stroke-width ease 1s;
+    opacity: 1;
+}
+.continent.focused .country.faded {
+    opacity: 0;
+}
+.continent.focused .country.focused {
+    stroke-width: 0;
+}
+#country-details {
+    -webkit-transition: opacity ease 0.5s;
+    transition: opacity ease 0.5s;
+    position: absolute;
+    margin: 0px;
+    /* margin-left: 50%; */
+    padding-right:5%;
+    /* background-color: yellow; */
+    width: 100%
+
+}
+
+.faded{
+    opacity:0;
+}
+
+.table-cell{
+    font-size: 1.3rem;
+}
+
+#legend1{
+    float:left;
+    width:0%;
+    height:0%;
+    margin-top:11%;
+    overflow: visible;
+}
+svg:not(:root){
+    overflow: visible;
+}
+ 
+#description{
+    /* background-color:rgba(22, 22, 22, 0.808); */
+    width: 40%;
+    height: 40vh;
+    margin-top: 5%;
+    margin-right: 7%; 
+    float: right;
+}
+
+.country-table{
+    height: 30vh;
+}
+.description-grid-row{
+    color: white;
+}
+#country-details.faded {
+    opacity: 0;
+}
+#country-details h2 {
+    margin-left: 300px;
+    margin-top: 0px;
+}
+#country-details .indicator {
+    font-size: 2em;
+    margin-left: 150px;
+    /* margin-top: 60px; */
+}
+#country-details .indicator #man {
+    fill: #afb4bd;
+    float: left;
+    height: 150px;
+    stroke: none;
+    width: 100px;
+}
+#country-details .indicator #man .fill-level {
+    -webkit-transition: fill ease-out 800ms;
+    transition: fill ease-out 800ms;
+    fill: #cd2514;
+}
+#country-details .indicator .value {
+    float: left;
+    line-height: 1em;
+    margin-right: 5px;
+    margin-top: 0.5em;
+}
+#country-details .indicator .units {
+    float: left;
+    padding-top: 0.03em;
+    margin-top: 0.5em;
+}
+#country-details .indicator .units > * {
+    font-size: 0.4em;
+}
+#country-details .indicator .units > .down {
+    line-height: 1em;
+}
+
+#country-name{
+    float:right;
+    font-size: 3rem;
+}

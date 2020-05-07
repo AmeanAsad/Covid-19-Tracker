@@ -1,0 +1,49 @@
+.countup{
+    font-size: 1.5rem;
+}
+
+
+.more-info{
+    margin-top: 5%;
+    width: 90%;
+    margin: 3% auto;
+}
+
+/* .message-header{
+    float:left;
+    margin-left: 2%;
+    margin-bottom: 5%;
+
+} */
+.homepage-row{
+    width: 95%;
+    margin: 2% auto;
+    border-radius: 5px;
+    /* border: 4px solid #0E6EB8; */
+    padding: 0.5%;
+    
+}
+h1{
+    color: #0E6EB8;
+
+}
+
+
+.stat-message{
+    background-color: white !important;
+    width: 80% !important;
+    margin: 0 auto !important;
+    
+}
+
+.bottom-row{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px
+
+}
+
+.top-row{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px
+
+}

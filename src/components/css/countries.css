@@ -1,0 +1,27 @@
+.table-wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+.table-body {
+    display: block;
+    height: 80vh;
+    overflow: scroll;
+    width:101%;
+  }
+
+
+.dropdown-wrapper{
+  margin-bottom: 2%;
+}
+
+  
+  .table-head,
+ .table-row {
+    display:table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  

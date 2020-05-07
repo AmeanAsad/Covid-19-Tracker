@@ -1,0 +1,140 @@
+
+.content-wrapper{
+    margin-top: -3%;
+    height: 87vh;
+    overflow: scroll;
+
+}
+.pie-column{
+    /* border-radius: 4px; */
+    background-color: white;
+    margin:1%;
+    padding-bottom: 2%;
+    
+    /* border: 2px solid black; */
+}
+.stat-column-1{
+    /* border-radius: 4px; */
+    background-color: white;
+    /* border: 2px solid black; */
+
+}
+
+.stat-message{
+    width: 100% !important;
+    box-shadow: 2px 2px 2px   rgba(68, 68, 68, 0.6) !important;
+    border: 0.6px solid rgba(34,36,38,.15) !important;
+    /* border-radius: 0px !important; */
+
+
+}
+
+.table-stat{
+    height: 80% !important;
+}
+
+.left{
+    width:20%;
+    float:left;
+    margin-left: 1%;
+    direction:rtl; 
+
+}
+
+.right-column{
+    width: 78%;
+    float:left;
+    height: 85vh;
+    overflow: scroll;
+    display:block;
+    margin-right: 1%;
+}
+
+.count{
+    font-size: 1.2rem !important;
+}
+
+#segment{
+    border: 0.6px solid rgba(34,36,38,.15) !important;
+    text-align: center;
+    height: 50%;
+    box-shadow: 2px 2px 2px  rgba(68, 68, 68, 0.6);
+
+}
+#segment-chart{
+    border: 0.6px solid rgba(34,36,38,.15) !important;
+    text-align: center;
+    height: 100% !important;
+    box-shadow: 2px 2px 2px  rgba(68, 68, 68, 0.6);
+
+}
+#segment-link{
+    border: 0.6px solid rgba(34,36,38,.15) !important;
+    text-align: center;
+    height: 29% !important;
+    box-shadow: 2px 2px 2px  rgba(68, 68, 68, 0.6);
+
+}
+
+#segment-table{
+    height: 105% !important;
+    border: 0.6px solid rgba(34,36,38,.15) !important;
+
+    box-shadow: 2px 2px 2px rgba(68, 68, 68, 0.6);
+
+}
+
+.seg-group{
+    height: 100% !important;
+}
+
+
+#segment-2{
+    border: 0.6px solid rgba(34,36,38,.15) !important;
+    text-align: center;
+    /* background-color: #EBEBEB; */
+    height: 31.6% !important;
+    box-shadow: 2px 2px 2px rgba(68, 68, 68, 0.6);
+    /* height: 26.2% !important; */
+    /* display: flex; Standard syntax */
+}
+
+
+
+.wrapper{
+    background-color:white;
+    width:100%;
+    height:100vh;
+}
+
+.stats-row{
+    width: 100% !important;
+    margin: 0 auto;
+}
+.row-stat{
+    /* border: 2px solid black; */
+    /* background-color: #000033; */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 2%;
+    
+
+}
+
+.total-tests{
+    font-size: 1.2rem !important;
+}
+.table-body {
+    display: block;
+    height: 85vh;
+    overflow: scroll;
+    width:100%;
+  }
+
+
+
+.header-row{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px
+
+}
