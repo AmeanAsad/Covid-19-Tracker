@@ -38,6 +38,7 @@ class Homepage extends Component {
                 config)
             .then(res => {
                 const datum = res.data
+                console.log(datum)
                 this.setState({ data_all: datum })
             })
             .catch(err => {
@@ -69,7 +70,6 @@ class Homepage extends Component {
         const elements = [];
         const ov = this.state.overall;
         const data = this.state.data_all;
-
         const deaths = (<CountUp className='countup' delay={1} end={this.state.deaths} />);
 
         const cases = (<CountUp className='countup' delay={1} end={this.state.cases} />);
@@ -86,10 +86,10 @@ class Homepage extends Component {
 
                     <Grid stackable centered>
 
-                        <Grid.Row className="top-row" color="">
+                        <Grid.Row className="top-row" >
                             <h1> Covid-19 World Project </h1>
                         </Grid.Row>
-                        <Grid.Row className="bottom-row" color="" columns={3}>
+                        <Grid.Row className="bottom-row" columns={3}>
                             <Grid.Column textAlign="center">
                                 <Message
                                     size="small"
@@ -132,11 +132,9 @@ class Homepage extends Component {
                         </Grid.Row>
                     </Grid>
                 </div>
-
-                <GeoChart data_all={this.state.data_all}></GeoChart>
                 <div className="more-info">
 
-                    <Message color='blue' className='message' size='huge'>
+                    <Message color='blue' className='message' size='medium'>
                         <Message.Header className="message-header">Map Usage</Message.Header>
                         <Message.List>
                             <Message.Item>Click on a continent to zoom on continent</Message.Item>
@@ -146,6 +144,9 @@ class Homepage extends Component {
                     </Message>
 
                 </div>
+
+                <GeoChart data_all={this.state.data_all}></GeoChart>
+
 
 
             </div >

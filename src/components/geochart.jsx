@@ -56,7 +56,6 @@ function GeoChart(props) {
 
     var countries = topojson.feature(world, world.objects.countries);
 
-    // console.log(countries)
     // We group the countries in contients (We removed Antarctica and we put oceania with Asia)
     var asia = { type: "FeatureCollection", name: "Asia and Oceania", id: 1, features: countries.features.filter(function (d) { return d.properties.continent == "Asia and Oceania"; }) };
     var africa = { type: "FeatureCollection", name: "Africa", id: 2, features: countries.features.filter(function (d) { return d.properties.continent == "Africa"; }) };
@@ -69,12 +68,11 @@ function GeoChart(props) {
     // There are 3 levels of zoom: "world, continent and country"
     var current = '';
     var worldDefaultTransformation = undefined;
-    var c = "World";
+    var c = "/info/World";
 
 
 
     useEffect(() => {
-        console.log(country_data);
         if (props.data_all["USA"] != undefined) {
 
             const svg = select(svgRef.current)
@@ -127,7 +125,6 @@ function GeoChart(props) {
                 focusLevel = "country";
                 selectedCountry = clickedCountry;
                 c = clickedCountry.properties.name;
-                console.log(c);
                 group.selectAll(".country").filter(function (d) {
                     if (d !== clickedCountry) {
                         return d;
@@ -154,7 +151,7 @@ function GeoChart(props) {
                     document.getElementById("description").className = "";
                     document.getElementById("legend1").className = "faded"
                     document.getElementById("map-country-header").textContent = "More Info on " + clickedCountry.properties.name;
-                    document.getElementById("map-country-header").href = 'http://127.0.0.1:8000/info/' + clickedCountry.properties.name;
+                    document.getElementById("map-country-header").href = 'https://covid19-informatics.herokuapp.com/info/' + clickedCountry.properties.name;
 
                     document.getElementById("table-header").textContent = clickedCountry.properties.name;
                     try {
@@ -247,7 +244,6 @@ function GeoChart(props) {
 
             const baseValue = 120;
             const remainder = 255 - baseValue;
-            // console.log(locations)
 
             const colorScheme = d3.interpolatePuBu;
             const colorScale = d3.scaleSqrt().domain([0, Math.log10(country_data['casesMax'])]);
@@ -255,22 +251,7 @@ function GeoChart(props) {
 
 
             const tooltip = function (country, c) {
-                // console.log(c)
-                // var location = locations[country]
-                // var t = projection(c)
-                // var coordinates = projection([location.longitude, location.latitude]);
-                // console.log(coordinates)
-                // svg.selectAll().data([1])
-                //     .enter()
-                //     .append("circle")
-                //     .attr("class", "bigcircle")
-                //     .attr("cx", t[0] - 30)
-                //     .attr("cy", t[1])
-                //     .attr("r", 10)
-                //     .style("fill", "69b3a2")
-                //     .attr("stroke", "#69b3a2")
-                //     .attr("stroke-width", 3)
-                //     .attr("fill-opacity", .4)
+
 
                 // console.log("clicked")
             }
@@ -428,7 +409,7 @@ function GeoChart(props) {
 
         <Grid centered>
             <Grid.Row id='tool' textAlign="center">
-                <Button size='huge' basic color="blue" href='/world' id="map-country-header"> World </Button>
+                <Button size='huge' basic color="blue" id="map-country-header"> World </Button>
             </Grid.Row>
 
             <div id="map-container" ref={wrapperRef} >

@@ -1,12 +1,26 @@
 import React, { Component } from 'react';
 import "./css/about.css";
-import { Grid, Message } from 'semantic-ui-react'
+import { Message, Button } from 'semantic-ui-react'
 
 import Navigation from "./navigation";
 
 class About extends Component {
     state = {}
     render() {
+        const email = 'amean.asad@queensu.ca'
+
+
+        const contribute = (
+            <div className='contribute'>
+                <h3> Contact developer at: <a href={"mailto:" + email}>amean.asad@queensu.ca  </a></h3>
+                <p> Feel free to reach out to share ideas, report issues, or to add to this project. </p>
+                <div>
+                    <Button href='https://github.com/AmeanAsad/Covid-19-Tracker' color='black' icon='github' > Github Repo</Button>
+                </div>
+            </div>
+        )
+
+
         return (
             <div>
 
@@ -23,8 +37,19 @@ class About extends Component {
                             icon='map marker'
                             header='About this project'
                             content='This project is meant to elegantly present information and statistics
-                        regarding Covid19 on a world-wide scale. This is not the final version of the project,
-                        hopefully there will be more edits to update the project to add more details.'
+                        regarding Covid19 on a world-wide scale.
+                        Hopefully there will be more edits to update the project to add more details.'
+                        />
+                    </div>
+
+                    <div className="message">
+                        <Message
+                            size="huge"
+
+                            className="about-message"
+                            icon='handshake'
+                            header='Contribute'
+                            content={contribute}
                         />
                     </div>
 

@@ -129,9 +129,7 @@ class Country extends Component {
             const table_row = (
                 <Table.Row className="table-row">
                     <Table.Cell textAlign="center" id='row-2' width={3}>{datum[i]['cases']}</Table.Cell>
-
                     <Table.Cell textAlign="center" id='row-1' width={3}><a href={'/info/' + datum[i]['country']}><h3>{datum[i]['country']} </h3></a> </Table.Cell>
-
                 </Table.Row >
 
             )

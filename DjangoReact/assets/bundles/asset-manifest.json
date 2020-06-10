@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/bundles/css/main.9d425f53.chunk.css",
+    "main.js": "/static/bundles/js/main.10e2e50e.chunk.js",
+    "main.js.map": "/static/bundles/js/main.10e2e50e.chunk.js.map",
+    "runtime~main.js": "/static/bundles/js/runtime~main.0b1435e7.js",
+    "runtime~main.js.map": "/static/bundles/js/runtime~main.0b1435e7.js.map",
+    "css/2.c4e8bdeb.chunk.css": "/static/bundles/css/2.c4e8bdeb.chunk.css",
+    "js/2.b840a6b9.chunk.js": "/static/bundles/js/2.b840a6b9.chunk.js",
+    "js/2.b840a6b9.chunk.js.map": "/static/bundles/js/2.b840a6b9.chunk.js.map",
+    "css/2.c4e8bdeb.chunk.css.map": "/static/bundles/css/2.c4e8bdeb.chunk.css.map",
+    "css/main.9d425f53.chunk.css.map": "/static/bundles/css/main.9d425f53.chunk.css.map",
+    "index.html": "/static/bundles/index.html",
+    "media/Agent-0.25-7-1.9.mp4": "/static/bundles/media/Agent-0.25-7-1.9.e0223792.mp4",
+    "media/Agent-0.5-14-1.9.mp4": "/static/bundles/media/Agent-0.5-14-1.9.84461383.mp4",
+    "media/Agent-0.5-7-1.2.mp4": "/static/bundles/media/Agent-0.5-7-1.2.0cca4275.mp4",
+    "media/Agent-0.5-7-1.9.mp4": "/static/bundles/media/Agent-0.5-7-1.9.1a85c6c1.mp4",
+    "media/SIR-0.25-7-1.9.png": "/static/bundles/media/SIR-0.25-7-1.9.7f0349bb.png",
+    "media/SIR-0.5-14-1.9.png": "/static/bundles/media/SIR-0.5-14-1.9.9f80bba8.png",
+    "media/SIR-0.5-7-1.2.png": "/static/bundles/media/SIR-0.5-7-1.2.930ae311.png",
+    "media/SIR-0.5-7-1.9.png": "/static/bundles/media/SIR-0.5-7-1.9.5eefa0d1.png",
+    "media/semantic.min.css": "/static/bundles/media/outline-icons.ef60a4f6.woff",
+    "media/logo.svg": "/static/bundles/media/logo.5d5d9eef.svg",
+    "precache-manifest.35c78b15a930af105a7807b95612bc9c.js": "/static/bundles/precache-manifest.35c78b15a930af105a7807b95612bc9c.js",
+    "service-worker.js": "/static/bundles/service-worker.js"
+  }
+}

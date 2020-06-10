@@ -2589,15 +2589,6 @@
                     "arcs": [
                         [
                             [
-                                492,
-                                493,
-                                494,
-                                128,
-                                -383
-                            ]
-                        ],
-                        [
-                            [
                                 519,
                                 -381,
                                 520,
@@ -2609,6 +2600,32 @@
                         "name": "Guyana",
                         "type": "country",
                         "capital": "Georgetown",
+                        "borders": "Surrounding Countries:  Brazil, Suriname, Venezuela",
+                        "continent": "South America",
+                        "location": {
+                            "latitude": 4.8417097,
+                            "longitude": -58.6416891
+                        }
+                    }
+                },
+                {
+                    "type": "MultiPolygon",
+                    "id": 328,
+                    "arcs": [
+                        [
+                            [
+                                492,
+                                493,
+                                494,
+                                128,
+                                -383
+                            ]
+                        ]
+                    ],
+                    "properties": {
+                        "name": " French Guiana",
+                        "type": "country",
+                        "capital": "Cayenne",
                         "borders": "Surrounding Countries:  Brazil, Suriname, Venezuela",
                         "continent": "South America",
                         "location": {

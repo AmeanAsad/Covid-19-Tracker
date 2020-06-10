@@ -22,7 +22,6 @@ from rest_framework.response import Response
 
 
 
-
 @api_view(["GET"])
 @csrf_exempt
 def get_covid_data(request):
@@ -69,8 +68,11 @@ def get_covid_countries(request):
 
     country_data= requests.get('https://coronavirus-19-api.herokuapp.com/countries')
     data = country_data.json()
+    data = sorted(data, key = lambda country: country['cases'], reverse=True)
 
     return  Response(data)
+
+
 
 @api_view(["GET"])
 @csrf_exempt

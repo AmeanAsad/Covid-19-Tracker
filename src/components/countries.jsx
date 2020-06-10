@@ -104,15 +104,15 @@ class Countries extends Component {
                 <Table.Row className="table-row">
                     <Table.HeaderCell sorted={column === 'country' ? direction : null}
                         onClick={this.handleSort('country')} width={3} >Country</Table.HeaderCell>
-                    <Table.HeaderCell sorted={column === 'cases' ? direction : null}
-                        onClick={this.handleSort('cases')}
+                    <Table.HeaderCell sorted={column === 'casesPerOneMillion' ? direction : null}
+                        onClick={this.handleSort('casesPerOneMillion')}
                         width={3}> Cases</Table.HeaderCell>
 
-                    <Table.HeaderCell sorted={column === 'deaths' ? direction : null}
-                        onClick={this.handleSort('deaths')}
+                    <Table.HeaderCell sorted={column === 'deathsPerOneMillion' ? direction : null}
+                        onClick={this.handleSort('deathsPerOneMillion')}
                         width={3}> Recoveries</Table.HeaderCell>
-                    <Table.HeaderCell sorted={column === 'Tests' ? direction : null}
-                        onClick={this.handleSort('Tests')} width={3}> Deaths</Table.HeaderCell>
+                    <Table.HeaderCell sorted={column === 'testsPerOneMillion' ? direction : null}
+                        onClick={this.handleSort('testsPerOneMillion')} width={3}> Deaths</Table.HeaderCell>
                 </Table.Row>
             </Table.Header >
 
@@ -122,12 +122,12 @@ class Countries extends Component {
                 <Table.Row className="table-row">
                     <Table.HeaderCell sorted={column === 'country' ? direction : null}
                         onClick={this.handleSort('country')} width={3} >Country</Table.HeaderCell>
-                    <Table.HeaderCell sorted={column === 'cases' ? direction : null}
-                        onClick={this.handleSort('cases')}
+                    <Table.HeaderCell sorted={column === 'todayCases' ? direction : null}
+                        onClick={this.handleSort('todayCases')}
                         width={3}> Cases</Table.HeaderCell>
 
-                    <Table.HeaderCell sorted={column === 'deaths' ? direction : null}
-                        onClick={this.handleSort('deaths')}
+                    <Table.HeaderCell sorted={column === 'todayDeaths' ? direction : null}
+                        onClick={this.handleSort('todayDeaths')}
                         width={3}> Recoveries</Table.HeaderCell>
 
                 </Table.Row>

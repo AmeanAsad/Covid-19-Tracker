@@ -19,7 +19,7 @@ class Navigation extends Component {
             <div className="menu-wrapper">
 
 
-                <Menu fluid stackable className="menu" size="large" stackable color="blue" inverted>
+                <Menu fluid stackable className="menu" size="large" stackable color="black" inverted>
 
                     <Menu.Item
                         as={Link} to="/"
@@ -31,6 +31,12 @@ class Navigation extends Component {
                         as={Link} to="/countries"
                         name='Countries'
                         active={activeItem === 'countries'}
+                        onClick={this.handleItemClick}
+                    />
+                    <Menu.Item
+                        as={Link} to="/simulation"
+                        name='Simulations'
+                        active={activeItem === 'Simulations'}
                         onClick={this.handleItemClick}
                     />
                     <Menu.Item

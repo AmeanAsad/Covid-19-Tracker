@@ -22,8 +22,8 @@
 
 .stat-message{
     width: 100% !important;
-    box-shadow: 2px 2px 2px   rgba(68, 68, 68, 0.6) !important;
-    border: 0.6px solid rgba(34,36,38,.15) !important;
+    /* box-shadow: 2px 2px 2px   rgba(68, 68, 68, 0.6) !important; */
+    /* border: 0.6px solid rgba(34,36,38,.15) !important; */
     /* border-radius: 0px !important; */
 
 
@@ -55,32 +55,32 @@
 }
 
 #segment{
-    border: 0.6px solid rgba(34,36,38,.15) !important;
+    /* border: 0.6px solid rgba(34,36,38,.15) !important; */
     text-align: center;
     height: 50%;
-    box-shadow: 2px 2px 2px  rgba(68, 68, 68, 0.6);
+    /* box-shadow: 2px 2px 2px  rgba(68, 68, 68, 0.6); */
 
 }
 #segment-chart{
-    border: 0.6px solid rgba(34,36,38,.15) !important;
+    /* border: 0.6px solid rgba(34,36,38,.15) !important; */
     text-align: center;
     height: 100% !important;
-    box-shadow: 2px 2px 2px  rgba(68, 68, 68, 0.6);
+    /* box-shadow: 2px 2px 2px  rgba(68, 68, 68, 0.6); */
 
 }
 #segment-link{
-    border: 0.6px solid rgba(34,36,38,.15) !important;
+    /* border: 0.6px solid rgba(34,36,38,.15) !important; */
     text-align: center;
     height: 29% !important;
-    box-shadow: 2px 2px 2px  rgba(68, 68, 68, 0.6);
+    /* box-shadow: 2px 2px 2px  rgba(68, 68, 68, 0.6); */
 
 }
 
 #segment-table{
     height: 105% !important;
-    border: 0.6px solid rgba(34,36,38,.15) !important;
+    /* border: 0.6px solid rgba(34,36,38,.15) !important; */
 
-    box-shadow: 2px 2px 2px rgba(68, 68, 68, 0.6);
+    /* box-shadow: 2px 2px 2px rgba(68, 68, 68, 0.6); */
 
 }
 
@@ -90,11 +90,11 @@
 
 
 #segment-2{
-    border: 0.6px solid rgba(34,36,38,.15) !important;
+    /* border: 0.6px solid rgba(34,36,38,.15) !important; */
     text-align: center;
     /* background-color: #EBEBEB; */
     height: 31.6% !important;
-    box-shadow: 2px 2px 2px rgba(68, 68, 68, 0.6);
+    /* box-shadow: 2px 2px 2px rgba(68, 68, 68, 0.6); */
     /* height: 26.2% !important; */
     /* display: flex; Standard syntax */
 }

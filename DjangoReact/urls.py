@@ -17,6 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.views.generic import TemplateView
 from .covid_api import get_country_coordinates, get_country_data,get_covid_data, get_covid_all, get_covid_countries,get_covid_covid_search_data
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/get/data', get_covid_data, name='covid_data' ),

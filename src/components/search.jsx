@@ -17,7 +17,7 @@ const config = {
 const source = [];
 
 axios
-    .get("http://127.0.0.1:8000/api/get/search/",
+    .get("http://covid19-informatics.com/get/search/",
         config)
     .then(res => {
         const users = res.data
@@ -40,7 +40,6 @@ axios
 
 const initialState = { isLoading: false, results: [], value: '', load: false }
 
-console.log(source[0])
 
 
 class SearchMenu extends Component {
@@ -51,13 +50,11 @@ class SearchMenu extends Component {
 
 
     handleResultSelect = (e, { result }) => {
-        console.log(result)
-        window.location.href = 'http://127.0.0.1:8000/info/' + result.title
+        window.location.href = 'http://covid19-informatics.com/info/' + result.title
     }
 
     handleSearchChange = (e, { value }) => {
 
-        console.log('change')
         this.setState({ isLoading: true, value, load: false })
 
         setTimeout(() => {
