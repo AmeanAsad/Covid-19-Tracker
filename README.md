@@ -40,7 +40,7 @@ To download repo you can:
    2. On one of the tabs type <code> cd DjangoReact/frontend </code> 
    3. In the root directory tab, type <code> python manage.py runserver --settings=production_settings </code> to start the Django server.
    4. In the frontend directory tab, type <code> npm run build </code>. 
-   5. In <code> DjangoReact/frontend </code> directory, copy the src file from that directory.
+   5. In <code> DjangoReact/frontend </code> directory, copy the <code> src </code> file from that directory.
    6. Paste it in the root directory of the project, and replacing the <code> src </code> file there. (I am working on a fix to prevent the copy/pasting part, but this works for now).
    7. Go to your browser and in the url tab, type <code> http://127.0.0.1:8000/ </code> to navigate to the page. 
    
