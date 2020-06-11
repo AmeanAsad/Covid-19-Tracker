@@ -13,14 +13,14 @@ To download repo you can:
   - You need to have Node and pip installed on your machine. Installing these packages is fairly easy with a quick google search. 
   - There are two steps to this, installing the Python Django Packages and Installing the Node Packages:
   1. To install Python Packages:
-    - Open terminal/cmd
-    - cd to the root directory of the repo. 
-    - Run <code> pip install -r requirements.txt </code> 
+   - Open terminal/cmd
+   - cd to the root directory of the repo. 
+   - Run <code> pip install -r requirements.txt </code> 
   2. To install Node Packages:
-    - Open terminal/cmd
-    - cd to the root directory of the repo.
-    - Type <code> cd DjangoReact/frontend </code>
-    - Type <code> npm install </code> 
+   - Open terminal/cmd
+   - cd to the root directory of the repo.
+   - Type <code> cd DjangoReact/frontend </code>
+   - Type <code> npm install </code> 
 
 # Usage
 
