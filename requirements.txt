@@ -13,7 +13,7 @@ geographiclib==1.50
 geopy==1.21.0
 gunicorn==19.9.0
 idna==2.8
-numpy==1.17.2
+numpy==1.22.0
 psycopg2==2.8.3
 PuLP==2.0
 pycparser==2.19
